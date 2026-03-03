@@ -51,9 +51,8 @@ if __name__ == "__main__":
 
     # 以 SSE 模式启动 MCP Server
     # SSE 模式允许通过 HTTP 协议访问，通常用于 Web 端或远程连接
-    #mcp.run(
-    #    transport="sse",
-    #    host=host,
-    #    port=port,
-    #)
-    mcp.run()
+    mcp.run(
+        transport="streamable-http",
+        host=host,
+        port=port,
+    )

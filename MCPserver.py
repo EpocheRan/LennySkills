@@ -3,7 +3,7 @@ from pathlib import Path
 from fastmcp import FastMCP
 
 # 初始化 FastMCP
-mcp = FastMCP("LennySkillsPlus")
+mcp = FastMCP("LennySkillsPlus",stateless_http=True)
 
 # 定义技能根目录
 SKILLS_DIR = Path(__file__).parent / "skills"
